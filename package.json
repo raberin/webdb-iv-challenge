@@ -1,0 +1,17 @@
+{
+  "name": "webdb-iv-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/raberin/webdb-iv-challenge.git",
+  "author": "raberin <rmvaberin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon"
+  },
+  "dependencies": {
+    "helmet": "^3.18.0",
+    "knex": "^0.17.3",
+    "nodemon": "^1.19.1",
+    "sqlite3": "^4.0.8"
+  }
+}
