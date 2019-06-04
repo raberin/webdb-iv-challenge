@@ -32,11 +32,6 @@ exports.up = function(knex, Promise) {
       tbl.increments();
 
       tbl
-        .string("name", 128)
-        .notNullable()
-        .unique();
-
-      tbl
         .integer("recipes_id")
         .unsigned()
         .notNullable()

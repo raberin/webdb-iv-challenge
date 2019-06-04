@@ -1,7 +1,12 @@
 exports.seed = function(knex, Promise) {
-  return knex("dishes").insert([
-    { name: "pasta" },
-    { name: "pizza" },
-    { name: "chicken" }
-  ]);
+  // Deletes ALL existing entries
+  return knex("dishes")
+    .del()
+    .then(function() {
+      return knex("dishes").insert([
+        { name: "pasta" },
+        { name: "pizza" },
+        { name: "chicken" }
+      ]);
+    });
 };
